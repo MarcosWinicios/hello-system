@@ -1,0 +1,13 @@
+server:
+  error:
+    include-message: ALWAYS
+spring:
+  application:
+    name: hello-system
+  datasource:
+    url: ${database.url}
+    username: ${database.username}
+    password: ${database.password}
+
+  jpa:
+    show-sql: ${jpa.show-sql:false}
